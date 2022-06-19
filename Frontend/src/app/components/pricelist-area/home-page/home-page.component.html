@@ -1,0 +1,10 @@
+
+<div style="margin:auto; width: 70%; margin-top: 30px;">
+    <!-- מחזיר את כל האובייקטים שניבחרו בחיפוש = onSelectedOption($event)-->
+    <!--onSelectedOption ומכניס את הערך למשתנה -->
+    <app-search-bar (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
+
+</div>
+<app-pricelistcard *ngFor="let g of post" [PriceList]="g" (deleteMe)="deleteThisCard($event)" >
+
+</app-pricelistcard>

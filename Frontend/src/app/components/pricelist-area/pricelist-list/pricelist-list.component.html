@@ -1,0 +1,21 @@
+<div class="mainDiv">
+<div class="mainSelect">
+  <div class="furnitureCardSelect">
+    <div>
+      <label>Select furniture Size : </label>
+
+    </div>
+
+    <div style="margin-top: 475px">
+      <span class="span">1</span>
+    </div>
+  </div>
+</div>
+
+<div class="furnitureCard">
+
+  <app-pricelistcard *ngFor="let g of pricelist" [PriceList]="g" (deleteMe)="deleteThisCard($event)" >
+
+  </app-pricelistcard>
+</div>
+</div>

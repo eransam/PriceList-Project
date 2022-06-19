@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <mat-card-title> priceListName: {{ PriceList.priceListName }} </mat-card-title>
+
+
+  <mat-card-content> extErpPriceListID: {{ PriceList.extErpPriceListID }} </mat-card-content>
+  <mat-card-content> priceListID: {{ PriceList.priceListID }} </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button (click)="deletePriceList(PriceList._id)">🚮</button>
+  </mat-card-actions>
+</mat-card>
+
+<br />

@@ -1,0 +1,10 @@
+.main{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    /*מרווח בין האלמנטים */
+    gap: 10px;
+
+}

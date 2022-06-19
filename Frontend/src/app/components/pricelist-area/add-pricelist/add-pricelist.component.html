@@ -1,0 +1,42 @@
+<div>
+
+    <form (ngSubmit)="send()" #furnitureForm="ngForm">
+
+
+        <label>priceListName: </label>
+        <input type="text" name="priceListName" [(ngModel)]="pricelist.priceListName"  required #priceListNameBox="ngModel" />
+        <span *ngIf="priceListNameBox.errors?.['required'] && priceListNameBox.touched">Missing priceListNameBox</span>
+
+        
+
+        <label>extErpPriceListID: </label>
+        <input type="number" name="extErpPriceListID" [(ngModel)]="pricelist.extErpPriceListID" step="0.01" required #extErpPriceListIDBox="ngModel" />
+        <span *ngIf="extErpPriceListIDBox.errors?.['required'] && extErpPriceListIDBox.touched">Missing extErpPriceListIDBox</span>
+
+
+
+        <label>priceListID: </label>
+        <input type="number" name="priceListID" [(ngModel)]="pricelist.priceListID" step="0.01" required #priceListIDBox="ngModel" />
+        <span *ngIf="priceListIDBox.errors?.['required'] && priceListIDBox.touched">Missing priceListIDBox</span>
+
+
+
+
+
+        <button [disabled]="furnitureForm.invalid">Add</button>
+        
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

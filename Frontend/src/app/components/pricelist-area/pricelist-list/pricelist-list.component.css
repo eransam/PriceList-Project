@@ -1,0 +1,37 @@
+.furnitureCard{
+    display: inline-block;
+    width: 40%;
+    height: 100%;   
+}
+
+.furnitureCardSelect{
+    width: 40%;
+    height: 100%;
+}
+
+.theElement{
+    position: absolute;
+    top: 20;
+}
+
+.mainSelect{
+    margin: 10px auto 0 auto;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.span{
+    margin: 50px auto 0 auto;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+.mainDiv{
+
+}
